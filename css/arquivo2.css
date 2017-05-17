@@ -1,0 +1,21 @@
+.pai, .filho1, .filho2 {
+  display: inline-block;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #641ec8;
+  text-decoration: none; }
+
+.filho1 {
+  text-align: center;
+  width: 100px;
+  margin-left: 10px;
+  float: right;
+  padding: 10px; }
+  .filho1:hover {
+    border: outset 3px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px; }
+
+.filho2:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.2); }

@@ -1,0 +1,56 @@
+
+$tema : 0;
+$cor_do_texto : rgb(100, 30, 200);
+$cor_um : rgb(255, 255, 255);
+$cor_dois : rgb(255, 255, 000);
+$cor_fundo_btn : rgba(000, 000, 000, 0.2);
+
+
+@if $tema == 1{
+	$cor_do_texto : rgb(0, 0, 0);
+	$cor_um : rgb(255, 255, 255);
+	$cor_dois : rgb(255, 255, 000);
+	$cor_fundo_btn : rgba(000, 255, 000, 0.2);
+}@else {
+
+	@if $tema == 2{
+		$cor_do_texto : rgb(255, 255, 0);
+		$cor_um : rgb(255, 100, 255);
+		$cor_dois : rgb(100, 255, 000);
+		$cor_fundo_btn : rgba(000, 255, 255, 0.2);
+	}
+}
+
+.pai{
+	display: inline-block;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	color: $cor_do_texto;
+  	text-decoration: none;  	
+}
+
+.filho1{
+	@extend .pai;
+	text-align: center;
+	width: 100px;
+	margin-left: 10px;
+	float: right;
+	padding: 10px;
+
+	&:hover{
+   		border:outset 3px rgba(000, 000, 000, 0.2);
+   		color: $cor_um;
+   		background-color: $cor_fundo_btn;
+   		border-radius: 10px 10px 10px 10px;
+	}		
+}
+
+.filho2{
+	@extend .pai;
+	&:hover{
+		color:$cor_dois;		
+		background-color: rgba(000, 000, 000, 0.2);		
+	}
+}
+
+
+
