@@ -11,14 +11,11 @@ $cor_fundo_btn : rgba(000, 000, 000, 0.2);
 	$cor_um : rgb(255, 255, 255);
 	$cor_dois : rgb(255, 255, 000);
 	$cor_fundo_btn : rgba(000, 255, 000, 0.2);
-}@else {
-
-	@if $tema == 2{
+}@else if $tema == 2{
 		$cor_do_texto : rgb(255, 255, 0);
 		$cor_um : rgb(255, 100, 255);
 		$cor_dois : rgb(100, 255, 000);
 		$cor_fundo_btn : rgba(000, 255, 255, 0.2);
-	}
 }
 
 .pai{
